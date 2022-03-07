@@ -3,39 +3,101 @@ import java.sql.SQLOutput;
 public class TestClass {
     public static void main(String[] args) {
 
-        String[] names;
-        names = new String[3];
+        int a;
 
-        String[] name = new String[3];
-        int[] arr = new int[10];
+        a = 10;
+        a = 20;
+        System.out.println(a);
 
-        name[0] = "Vasya";
-        name[1] = "Petya";
-        name[2] = "Vanya";
+        int b = a;
+        System.out.println(b);
 
-        System.out.println(name[0]);
-        System.out.println(name[2]);
+        int c, d;
+        c = d = b;
+        System.out.println(c + " " + d);
+        System.out.println();
 
-        arr[3] = 15;
-        arr[3] = 10;
-        System.out.println(arr[3]);
+        a = 13;
+        b = 5;
 
-        int[] array = {15, 10, 100, 9, 44};
-        System.out.println(array[0]);
-        System.out.println(array[1]);
-        System.out.println(array[2]);
+        System.out.println(a + b);
+        System.out.println(a - b);
+        System.out.println(a * b);
+        System.out.println(a / b);
 
-        for (int i = 0; i < 5; i++){
-            System.out.println(array[i]);
-        }
+        double e = 15;
+        double f = 7;
+        System.out.println(e / f);
+        System.out.println(a % b);
 
-        int[] arr2 = new int[15];
+        a = b + c * d;
+        System.out.println(a);
 
-        for (int j = 0; j < 15; j++){
-            arr2[j] = j * 10;
-            System.out.println(arr2[j]);
-        }
+        a = (b + c) * d;
+        System.out.println(a);
 
+        a = 15;
+        b = 10;
+
+        System.out.println(a > b);
+        System.out.println(a < b);
+        System.out.println(a - 5 >= b);
+        System.out.println(a - 5 <= b);
+        System.out.println(a == b);
+        System.out.println(a != b);
+        System.out.println(a +10 <= b + 15);
+
+        System.out.println(!(a +10 <= b + 15));
+        System.out.println(!(false));
+
+        int i = 0;
+        i++;
+        System.out.println(i);
+        i--;
+        System.out.println(i);
+
+        i = 5;
+        System.out.println(i++);
+        System.out.println(i );
+
+        i = 3;
+        a = i++;
+        System.out.println(a);
+
+        i = 3;
+        a = ++i;
+        System.out.println(a);
+
+        a = 10;
+        b = 20;
+        System.out.println();
+        System.out.println(a > b || a < b);
+        System.out.println(a > b || b > 30);
+        System.out.println(a < b && a == 10);
+
+        System.out.println(!((a + 10 > 15 || b - 5 > 10) && a < b));
+
+        a = 9;
+        System.out.println(Math.sqrt(a));
+        System.out.println(Math.pow(a,3));
+
+
+        a = 10;
+        a = a + 5;
+        System.out.println();
+        System.out.println(a);
+
+        a = 10;
+        a += 5;
+        System.out.println(a);
+        a -= 5;
+        System.out.println(a);
+        a *= 2;
+        System.out.println(a);
+        a /= 2;
+        System.out.println(a);
+        a %= 3;
+        System.out.println(a);
 
 
     }
