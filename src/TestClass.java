@@ -1,104 +1,71 @@
 import java.sql.SQLOutput;
+import java.util.Locale;
 
 public class TestClass {
     public static void main(String[] args) {
 
-        int a;
+        String s = "Hello world!";
+        System.out.println(s.equals("Hello world!"));
+        System.out.println(s.equals("Hello"));
 
-        a = 10;
-        a = 20;
-        System.out.println(a);
+        String s2 = "hello";
+        System.out.println(s.equals(s2));
+        s = "text";
+        s2 = "TEXT";
+        System.out.println(s.equals(s2));
+        System.out.println(s.equalsIgnoreCase(s2));
 
-        int b = a;
-        System.out.println(b);
+        s = "TeXt";
+        System.out.println();
+        System.out.println(s);
+        System.out.println(s.toLowerCase());
+        System.out.println(s.toUpperCase());
 
-        int c, d;
-        c = d = b;
-        System.out.println(c + " " + d);
+        System.out.println();
+        System.out.println(s.charAt(1));
+        System.out.println(s.indexOf("Xt"));
+
+        s = "Hello world!";
+        System.out.println(s.contains("Hello"));
+        System.out.println(s.contains("text"));
+        System.out.println(s.length());
+        System.out.println();
+        System.out.println(s.startsWith("He"));
+        System.out.println(s.startsWith("!"));
+        System.out.println(s.endsWith("He"));
+        System.out.println(s.endsWith("!"));
+
+        s = "Hello,world";
+        System.out.println();
+        String[] array = s.split(",");
+        System.out.println(array[0] + "!" + array[1] + "!");
+
+        String str = "My name is %s! I'm %d years old";
+        int age = 30;
+        String name = "Ivan";
+        System.out.println(String.format(str, name, age));
+
         System.out.println();
 
-        a = 13;
-        b = 5;
+        String age2 = "30";
+        int a = Integer.parseInt(age2);
+        System.out.println(a * 3);
 
-        System.out.println(a + b);
-        System.out.println(a - b);
-        System.out.println(a * b);
-        System.out.println(a / b);
+        s = "Hello, world!";
+        System.out.println(s.substring(1,5));
+        System.out.println(s.substring(7));
 
-        double e = 15;
-        double f = 7;
-        System.out.println(e / f);
-        System.out.println(a % b);
+        System.out.println(s.substring(7, s.length() - 2));
 
-        a = b + c * d;
-        System.out.println(a);
+        String s1 = "Hello ";
+        s2 = "world";
+        String s3 = "!";
+        String res;
+        res = s1 + " " + s2 + s3;
+        System.out.println(res);
 
-        a = (b + c) * d;
-        System.out.println(a);
-
-        a = 15;
-        b = 10;
-
-        System.out.println(a > b);
-        System.out.println(a < b);
-        System.out.println(a - 5 >= b);
-        System.out.println(a - 5 <= b);
-        System.out.println(a == b);
-        System.out.println(a != b);
-        System.out.println(a +10 <= b + 15);
-
-        System.out.println(!(a +10 <= b + 15));
-        System.out.println(!(false));
-
-        int i = 0;
-        i++;
-        System.out.println(i);
-        i--;
-        System.out.println(i);
-
-        i = 5;
-        System.out.println(i++);
-        System.out.println(i );
-
-        i = 3;
-        a = i++;
-        System.out.println(a);
-
-        i = 3;
-        a = ++i;
-        System.out.println(a);
-
-        a = 10;
-        b = 20;
-        System.out.println();
-        System.out.println(a > b || a < b);
-        System.out.println(a > b || b > 30);
-        System.out.println(a < b && a == 10);
-
-        System.out.println(!((a + 10 > 15 || b - 5 > 10) && a < b));
-
-        a = 9;
-        System.out.println(Math.sqrt(a));
-        System.out.println(Math.pow(a,3));
-
-
-        a = 10;
-        a = a + 5;
-        System.out.println();
-        System.out.println(a);
-
-        a = 10;
-        a += 5;
-        System.out.println(a);
-        a -= 5;
-        System.out.println(a);
-        a *= 2;
-        System.out.println(a);
-        a /= 2;
-        System.out.println(a);
-        a %= 3;
-        System.out.println(a);
-
+        res = s1.concat(s2).concat(s3);
+        System.out.println(res);
 
     }
 
