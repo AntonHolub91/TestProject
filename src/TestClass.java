@@ -8,6 +8,7 @@ public class TestClass {
         System.out.println(s.equals("Hello world!"));
         System.out.println(s.equals("Hello"));
 
+        
         String s2 = "hello";
         System.out.println(s.equals(s2));
         s = "text";
