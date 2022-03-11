@@ -2,7 +2,7 @@ import java.sql.SQLOutput;
 import java.util.Locale;
 
 public class TestClass {
-    public static void main(String[] args) {
+    public static void main (String[] args) {
 
         String s = "Hello world!";
         System.out.println(s.equals("Hello world!"));
