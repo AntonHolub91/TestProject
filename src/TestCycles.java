@@ -42,6 +42,11 @@ public class TestCycles {
             System.out.println("do: " + i);
             i++;
         } while (i < 5);
+        System.out.println();
+
+        for (int q = 16; q < 20;) {
+            System.out.println(q * 2);
+        }
 
 
     }
