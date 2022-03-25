@@ -1,35 +1,48 @@
 public class TestClass {
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
 
-        byte a = 127; // -128 127
-        System.out.println(a);
+        Car car1 = new Car();
+        car1.color = "Black";
+        car1.length = 5000;
+        car1.height = 2000;
+        car1.width = 2000;
 
-        short b = -100; // -32768 32767
-        int c;
-        c = 100;
-        long d = -1232323;
+        car1.addWeight(50);
+        car1.drive(120);
 
-        System.out.println(a + " " + b);
+        car1.addWeight(700);
+        car1.drive(100);
 
-        boolean boolean1 = true;
-        boolean boolean2 = false;
-        System.out.println(boolean1);
-        System.out.println(boolean2);
+        Car car2 = new Car();
+        car2.color = "White";
+        Car car3 = new Car();
+        car3.color = "Red";
 
-        boolean boolean3 = 1 + 2 < 5;
-        boolean boolean4 = 1 + 2 >5;
+        car2.drive(100);
+        car3.drive(150);
+
+        Car car4 = new Car("Black");
+        System.out.println("Car color is: " + car4.color);
+
+        Car car5 = new Car("Red", 2100, 2000, 5110);
+        System.out.println(car5.color + " " + car5.height + " " + car5.width + " " + car5.length);
         System.out.println();
-        System.out.println(boolean3);
-        System.out.println(boolean4);
 
-        String str = "Hello";
-        String str2 = "World!";
-        String str3 = str + " " + str2;
-        System.out.println(str3);
+        System.out.println(Car.var);
+        Car.var = 100;
 
-        char char1 = 'a';
-        System.out.println(char1);
+        System.out.println(car1.var);
+        System.out.println(car2.var);
+        System.out.println(car3.var);
+        System.out.println(car4.var);
+        System.out.println(car5.var);
+
+        Car.method();
+
+        String.format("New %s string", "String");
+
+
 
 
     }
