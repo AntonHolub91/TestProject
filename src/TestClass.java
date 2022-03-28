@@ -23,12 +23,10 @@ public class TestClass {
         System.out.println("Cat name is: " + cat.name + ". " + cat.name + " color is " + cat.color);
         System.out.println("Dog name is: " + dog.name + ". " + dog.name + " color is " + dog.color);
 
-        cat.sleep();
-        dog.sleep();
+        cat.sound();
+        dog.sound();
 
-        dog.var = 10;
 
-        System.out.println(dog.getWeight());
 
     }
 

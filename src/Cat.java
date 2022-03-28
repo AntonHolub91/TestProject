@@ -2,7 +2,11 @@ public class Cat extends Animal{
 
     public void feed(String feed){
         System.out.println("I like: " + feed);
-        var = 13;
+    }
+
+    @Override
+    public void sound(){
+        System.out.println("Meow meow");
     }
 
 
