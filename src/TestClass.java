@@ -26,6 +26,10 @@ public class TestClass {
         cat.sleep();
         dog.sleep();
 
+        dog.var = 10;
+
+        System.out.println(dog.getWeight());
+
     }
 
 }

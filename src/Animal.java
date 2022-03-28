@@ -1,9 +1,12 @@
 public class Animal {
-    String name;
-    String color;
+    protected String name;
+    protected String color;
+
+    int var;
 
     public void walk(String place){
         System.out.println("We are walking here: " + place);
+        var = 10;
     }
 
     public void sleep(){
